@@ -7,7 +7,7 @@ const ButtonPage = () => {
       <Button
         onClick={() => console.log('entre')}
         size={'lg'}
-        variant="destructive"
+        variant="secondary"
       >
         Click me
       </Button>
