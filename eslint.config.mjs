@@ -7,12 +7,22 @@ import prettier from 'eslint-plugin-prettier';
 import prettierConfig from 'eslint-config-prettier';
 import parser from '@typescript-eslint/parser';
 import jsxA11y from 'eslint-plugin-jsx-a11y';
+const tailwindcss = require('tailwindcss');
+const autoprefixer = require('autoprefixer');
 
 export default [
   js.configs.recommended,
   {
+    extends: [js.configs.recommended, ...tseslint.configs.recommended],
     files: ['**/*.{js,jsx,ts,tsx}'],
-    ignores: ['dist', 'eslint.config.mjs', 'jest.config.js', 'vite.config.ts'],
+    ignores: [
+      'dist',
+      'eslint.config.mjs',
+      'jest.config.js',
+      'vite.config.ts',
+      'postcss.config.js',
+      'tailwind.config.ts',
+    ],
     languageOptions: {
       ecmaVersion: 2020,
       globals: {
@@ -34,6 +44,8 @@ export default [
       'react-refresh': reactRefresh,
       prettier: prettier,
       'jsx-a11y': jsxA11y, // Añade el plugin de accesibilidad
+      tailwindcss: tailwindcss,
+      autoprefixer: autoprefixer,
     },
     rules: {
       ...reactHooks.configs.recommended.rules,

@@ -6,6 +6,8 @@
     "jest.config.js",
     "vite.config.ts",
     "tests/**/*.js",
-    "tests/**/*.tsx" // Añadir esta línea para incluir los archivos de prueba
+    "tests/**/*.tsx", // Añadir esta línea para incluir los archivos de prueba
+    "postcss.config.js",
+    "tailwind.config.ts"
   ]
 }

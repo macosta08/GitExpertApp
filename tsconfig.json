@@ -6,7 +6,12 @@
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "types": ["node"]
   },
   "include": [
     "src",
@@ -14,5 +19,7 @@
     "jest.config.js",
     "vite.config.ts",
     "test/**/*.js"
+    // "./tsconfig.app.json",
+    // "./tsconfig.node.json"
   ]
 }
