@@ -6,7 +6,6 @@
   "scripts": {
     "dev": "tsc --noEmit && vite",
     "build": "vite build",
-    "build2": "tsc --noEmit && bun build src/main.tsx --outdir=dist",
     "lint": "eslint --fix .",
     "prettier": "prettier --write .",
     "test": "jest --watchAll",

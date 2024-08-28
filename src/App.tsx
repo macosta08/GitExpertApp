@@ -1,13 +1,9 @@
-import ButtonPage from './pages/Button.js';
 import React from 'react';
-import './App.css';
+import '../app/app.css';
+import GitExpertApp from './components/GitExpertApp';
 
 const App = () => {
-  return (
-    <div>
-      <ButtonPage />
-    </div>
-  );
+  return <GitExpertApp />;
 };
 
 export default App;
