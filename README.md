@@ -1,6 +1,6 @@
-# Counter App - React + TypeScript + Vite
+# Gif Expert App - React + TypeScript + Vite
 
-Este proyecto es una aplicación de contador simple desarrollada con React, TypeScript y Vite. La aplicación permite incrementar y decrementar un contador, y está configurada con ESLint y Prettier para mantener un código limpio y consistente.
+Este proyecto es una aplicación simple que crea lista de gif usando la api GIPHY Developer, esta desarrollada con React, TypeScript , Vite, Tailwind, Shadcn. La aplicación permite realizar una lista de gif, y está configurada con ESLint y Prettier para mantener un código limpio y consistente.
 
 ## Lint despliegue en Vercel
 
@@ -25,7 +25,7 @@ https://counter-app-phi-one.vercel.app/
 
 Aquí tienes el archivo `README.md` con la información proporcionada:
 
-# Counter App
+# Gif Expert App
 
 ## Clonar el Repositorio
 
