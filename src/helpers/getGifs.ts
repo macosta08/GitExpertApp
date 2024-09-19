@@ -1,6 +1,7 @@
 export const getGifs = async (category: string) => {
-  const apiKey = import.meta.env.VITE_KEY_API_GIF;
-  const url = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${category}&limit=${9}`;
+  // const apiKey = import.meta.env.VITE_KEY_API_GIF;
+  // const url = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${category}&limit=${9}`;
+  const url = `https://api.giphy.com/v1/gifs/search?api_key=vdHOXF8LRu6Qe7KIyOcBoWN8UU5DZ6RC&q=${category}&limit=${9}`;
   const resp = await fetch(url);
   const { data } = await resp.json();
   const gifData = data?.map(

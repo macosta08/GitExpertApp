@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Prueba a GifItem debe de hacer match con el snapshot 1`] = `
+<div>
+  <div>
+    <div
+      class="relative w-full h-0 pb-[100%] overflow-hidden rounded-lg bg-gray-200"
+    >
+      <img
+        alt="Pikachu"
+        class="absolute inset-0 h-full w-full object-cover object-center group-hover:opacity-75"
+        src="https://media1.giphy.com/media/U2nN0ridM4lXy/giphy.gif?cid=3f1489d2cglbn6k3kljszmp47u58hm1fmr11b5dgdgpigw7a&ep=v1_gifs_search&rid=giphy.gif&ct=g"
+      />
+    </div>
+    <h4
+      class="mt-4 font-bold text-xl capitalize text-gray-700"
+    >
+      Pikachu
+    </h4>
+  </div>
+</div>
+`;

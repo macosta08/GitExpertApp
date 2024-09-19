@@ -29,13 +29,19 @@ interface GetGifProps {
  */
 
 const GifGrid = ({ category }: GifGridProps) => {
-  const { isLoading, images } = useFetchGifs({ category });
+  const { isLoading, images, error } = useFetchGifs({ category });
   const arrayLoading = Array(6).fill('');
   return (
     <div className="py-6">
       <h3 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl mb-10 py-2 border-b border-gray-500">
         {category}
       </h3>
+      {/* Mostrar mensaje de error si ocurre */}
+      {error && (
+        <div className="text-red-500 font-bold mb-4" role="alert">
+          {error}
+        </div>
+      )}
       <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
         {isLoading ? (
           <>

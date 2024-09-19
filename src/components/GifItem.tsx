@@ -1,7 +1,6 @@
 import React from 'react';
 
 interface GifProps {
-  id: string;
   title: string;
   url: string;
 }
@@ -11,7 +10,6 @@ interface GifProps {
  *
  * @component
  * @param {GifProps} props - Las propiedades necesarias para renderizar el componente.
- * @param {string} props.id - El identificador único del GIF.
  * @param {string} props.title - El título o descripción del GIF.
  * @param {string} props.url - La URL de la imagen del GIF.
  *

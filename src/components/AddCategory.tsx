@@ -26,7 +26,7 @@ interface AddCategoryProps {
 const AddCategory = ({ onAddElement }: AddCategoryProps) => {
   const { onSubmit, inputValue, onChangeInput } = useForm({ onAddElement });
   return (
-    <form onSubmit={onSubmit}>
+    <form onSubmit={onSubmit} aria-label="form">
       <Input
         type="text"
         placeholder="Buscar gifs"

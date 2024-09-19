@@ -1,27 +1,29 @@
 {
   "compilerOptions": {
-    "module": "es2020",
+    "module": "esnext",
     "target": "esnext",
     "moduleResolution": "node",
     "strict": true,
-    "jsx": "react",
+    "jsx": "react-jsx",
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "baseUrl": ".",
+    "baseUrl": "./",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["src/*"]
     },
-    "types": ["node"]
+    "types": ["node", "jest"],
+    "typeRoots": ["./node_modules/@types"]
   },
   "include": [
     "src",
-    "eslint.config.js",
-    "jest.config.js",
-    "vite.config.ts",
-    "test/**/*.js"
-  ]
+    "tests/**/*.ts",
+    "tests/**/*.tsx",
+    "setupTests.ts",
+    "jest.config.ts"
+  ],
+  "exclude": ["node_modules"]
 }

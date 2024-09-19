@@ -14,11 +14,18 @@ interface GetGifProps {
 const useFetchGifs = ({ category }: GifGridProps) => {
   const [images, setImages] = useState<[GetGifProps] | []>([]);
   const [isLoading, setisLoading] = useState<boolean>(true);
+  const [error, setError] = useState<string | null>(null);
   const getImages = async () => {
-    const newImages = await getGifs(category);
-
-    setImages(newImages);
-    setisLoading(false);
+    try {
+      const newImages = await getGifs(category);
+      setImages(newImages);
+    } catch {
+      setError(
+        'Error al cargar los GIFs. Por favor, inténtalo de nuevo más tarde.'
+      );
+    } finally {
+      setisLoading(false);
+    }
   };
   useEffect(() => {
     getImages();
@@ -27,6 +34,7 @@ const useFetchGifs = ({ category }: GifGridProps) => {
   return {
     images,
     isLoading,
+    error,
   };
 };
 
